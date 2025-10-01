@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viko Tech Repair — PC & Laptop Service | Custom Gaming PCs</title>
+  <meta name="description" content="PC & laptop repair (hardware & software), data recovery, upgrades, and custom gaming PC builds. Bilingual site (English/Bulgarian). Sofia area." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:title" content="Viko Tech Repair — PC & Laptop Service | Custom Gaming PCs" />
+  <meta property="og:description" content="PC & laptop repair, data recovery, upgrades, and custom gaming PC builds. EN/BG." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0f172a/e2e8f0&text=Viko+Tech+Repair" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🖥️</text></svg>">
+  <style>
+    :root{--bg:#0b1220;--panel:#0f172a;--text:#e5e7eb;--muted:#94a3b8;--brand:#0ea5e9;--accent:#22d3ee;--ok:#22c55e;--warn:#f59e0b;--err:#ef4444}
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b1220,#0b1220 40%,#0a1020 100%);color:var(--text)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;backdrop-filter:saturate(150%) blur(8px);background:rgba(11,18,32,.75);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    .nav{display:flex;align-items:center;gap:16px;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{font-size:28px}
+    .title{font-weight:800;letter-spacing:.3px}
+    nav ul{display:flex;list-style:none;gap:18px;padding:0;margin:0}
+    nav a{color:var(--text);opacity:.9}
+    nav a.active, nav a:hover{color:white}
+    .lang-switch{display:flex;gap:8px;align-items:center}
+    .lang-btn{border:1px solid rgba(255,255,255,.15);background:transparent;color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
+    .lang-btn.active{background:var(--brand);border-color:transparent;color:#001018}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:36px 0}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:rgba(14,165,233,.15);border:1px solid rgba(14,165,233,.35);color:#cffafe;padding:6px 10px;border-radius:999px;font-size:12px}
+    h1{font-size:42px;line-height:1.05;margin:12px 0 8px}
+    p.lead{font-size:18px;color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{border:none;padding:12px 16px;border-radius:12px;cursor:pointer;font-weight:700}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),#38bdf8);color:#03131a}
+    .btn.secondary{background:rgba(255,255,255,.06);color:var(--text);border:1px solid rgba(255,255,255,.12)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px}
+    .grid{display:grid;gap:16px}
+    .grid.services{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .service h3{margin:.3rem 0}
+    .pill{display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:3px 8px;border-radius:999px;font-size:12px;color:var(--muted)}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+    .section{margin:36px 0}
+    .section h2{margin:.2rem 0 1rem}
+    .config-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    select,input[type=number]{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:var(--text)}
+    .totals{display:flex;align-items:center;justify-content:space-between;margin-top:10px}
+    .price{font-size:24px;font-weight:800}
+    form{display:grid;gap:12px}
+    input,textarea{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.04);color:var(--text)}
+    textarea{min-height:130px;resize:vertical}
+    .small{font-size:12px;color:var(--muted)}
+    footer{margin-top:40px;border-top:1px solid rgba(255,255,255,.08);padding:24px 0;color:var(--muted)}
+    .kpi{display:flex;gap:14px;flex-wrap:wrap}
+    .kpi>div{padding:8px 12px;border-radius:12px;background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.25)}
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid.services{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 640px){
+      .grid.services,.grid.two{grid-template-columns:1fr}
+      h1{font-size:34px}
+    }
+  </style>
+  <!-- CMS-ready: Decap CMS can edit JSON under /content and images under /static/images -->
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">🛠️</div>
+        <div>
+          <div class="title">Viko Tech Repair</div>
+          <div class="pill" id="subtitle">PC & Laptop Service</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#services" data-i18n="nav_services" class="active">Services</a></li>
+          <li><a href="#build" data-i18n="nav_build">Build PC</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <button class="lang-btn active" id="btn-en">EN</button>
+        <button class="lang-btn" id="btn-bg">BG</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge"><span>⚡</span><span data-i18n="badge_fast">Fast, reliable fixes</span></span>
+        <h1 data-i18n="h1_title">PC & Laptop Repair • Custom Gaming PCs</h1>
+        <p class="lead" data-i18n="lead_copy">Hardware & software diagnostics, upgrades, data recovery, and hand-tuned gaming builds. Fair pricing. No jargon.</p>
+        <div class="kpi">
+          <div>⌛ <span data-i18n="kpi_turn">Same‑day diagnostics</span></div>
+          <div>🧰 <span data-i18n="kpi_warranty">3‑month repair warranty</span></div>
+          <div>📍 <span data-i18n="kpi_area">Sofia & nearby</span></div>
+        </div>
+        <div class="cta" style="margin-top:16px">
+          <a href="#contact" class="btn primary" data-i18n="cta_book">Book a repair</a>
+          <a href="#build" class="btn secondary" data-i18n="cta_build">Configure a gaming PC</a>
+        </div>
+      </div>
+      <div class="card">
+        <img alt="PC repair workspace" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" style="width:100%;border-radius:12px;display:block"/>
+        <div class="small" style="margin-top:6px" data-i18n="img_credit">Illustrative photo</div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2 data-i18n="services_title">Services</h2>
+      <div class="grid services">
+        <div class="card service">
+          <div class="pill">Hardware</div>
+          <h3 data-i18n="svc_hw_title">Diagnostics & Repair</h3>
+          <p class="small" data-i18n="svc_hw_desc">Motherboards, GPUs, screens, keyboards, cooling, power issues. Clean, replace, or repair.</p>
+        </div>
+        <div class="card service">
+          <div class="pill">Software</div>
+          <h3 data-i18n="svc_sw_title">OS & Malware</h3>
+          <p class="small" data-i18n="svc_sw_desc">Windows/macOS installs, drivers, performance tuning, malware cleanup, backups.</p>
+        </div>
+        <div class="card service">
+          <div class="pill">Upgrades</div>
+          <h3 data-i18n="svc_up_title">SSD, RAM, GPU</h3>
+          <p class="small" data-i18n="svc_up_desc">Speed up old machines with SSD/RAM upgrades or refresh your GPU/PSU/cooling.</p>
+        </div>
+        <div class="card service">
+          <div class="pill">Recovery</div>
+          <h3 data-i18n="svc_dr_title">Data Recovery</h3>
+          <p class="small" data-i18n="svc_dr_desc">Accidental deletion, dead drives, or corrupted OS—best‑effort recovery with integrity checks.</p>
+        </div>
+        <div class="card service">
+          <div class="pill">Builds</div>
+          <h3 data-i18n="svc_pc_title">Custom Gaming PCs</h3>
+          <p class="small" data-i18n="svc_pc_desc">Balanced parts, thermals, and noise. We build, stress test, and deliver ready to play.</p>
+        </div>
+        <div class="card service">
+          <div class="pill">Business</div>
+          <h3 data-i18n="svc_biz_title">On‑site & Contracts</h3>
+          <p class="small" data-i18n="svc_biz_desc">Office support, fleet refresh, imaging, asset tracking, and SLAs for small teams.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="build" class="section">
+      <h2 data-i18n="build_title">Configure your Gaming PC</h2>
+      <p class="small" data-i18n="build_note">Prices are indicative in BGN (w/ VAT). Final quote depends on market availability.</p>
+      <div class="grid two">
+        <div class="card">
+          <div class="config-row">
+            <label><span class="small">CPU</span>
+              <select id="cpu"></select>
+            </label>
+            <label><span class="small">GPU</span>
+              <select id="gpu"></select>
+            </label>
+            <label><span class="small" data-i18n="ram">RAM</span>
+              <select id="ram"></select>
+            </label>
+            <label><span class="small" data-i18n="storage">Storage</span>
+              <select id="storage"></select>
+            </label>
+            <label><span class="small" data-i18n="case">Case</span>
+              <select id="pcase"></select>
+            </label>
+            <label><span class="small" data-i18n="psu">PSU</span>
+              <select id="psu"></select>
+            </label>
+          </div>
+          <div class="totals">
+            <div class="small" id="build-summary">—</div>
+            <div class="price"><span id="total">0</span> BGN</div>
+          </div>
+          <button class="btn primary" id="btn-quote" style="margin-top:12px" data-i18n="btn_quote">Send as quote</button>
+        </div>
+        <div class="card">
+          <h3 data-i18n="tiers_title">Suggested tiers</h3>
+          <div class="small" id="tiers"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 data-i18n="contact_title">Contact</h2>
+      <div class="grid two">
+        <div class="card">
+          <form id=\"contact-form\" action=\"https://formspree.io/f/xxxxxxxx\" method=\"POST\" enctype=\"multipart/form-data\">\n            <input type=\"text\" name=\"name\" placeholder=\"Name / Име\" required />\n            <input type=\"email\" name=\"email\" placeholder=\"Email\" required />\n            <input type=\"tel\" name=\"phone\" placeholder=\"Phone / Телефон\" />\n            <textarea name=\"message\" id=\"message\" placeholder=\"Describe the issue or paste your build from above\" required></textarea>\n            <label class=\"small\">Add photo (optional): <input type=\"file\" name=\"attachment\" accept=\"image/*\" /></label>\n            <!-- honeypot -->\n            <input type=\"text\" name=\"company\" style=\"display:none\" tabindex=\"-1\" autocomplete=\"off\" />\n            <div class=\"small\" data-i18n=\"privacy\">By sending, you agree to be contacted about your request. We don't share your data.</div>\n            <button class=\"btn primary\" type=\"submit\" data-i18n=\"btn_send\">Send</button>\n          </form>
+        </div>
+        <div class="card">
+          <div style="display:grid;gap:8px">
+            <div>📍 <span class="mono">Sofia, BG</span></div>
+            <div>🕑 <span data-i18n="hours">Mon–Sat 10:00–19:00</span></div>
+            <div>✉️ <a href="mailto:hello@example.com">hello@example.com</a></div>
+            <div>📞 <a href="tel:+35980000000">+359 80 000 000</a></div>
+            <div class="small" data-i18n="contact_note">Drop‑offs by appointment. On‑site visits available.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div>© <span id="year"></span> Viko Tech Repair</div>
+        <div class="small">GitHub Pages Ready • Static HTML</div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // --- Language strings (EN & BG) ---
+    const I18N = {
+      en: {
+        subtitle: "PC & Laptop Service",
+        nav_services: "Services",
+        nav_build: "Build PC",
+        nav_contact: "Contact",
+        badge_fast: "Fast, reliable fixes",
+        h1_title: "PC & Laptop Repair • Custom Gaming PCs",
+        lead_copy: "Hardware & software diagnostics, upgrades, data recovery, and hand-tuned gaming builds. Fair pricing. No jargon.",
+        kpi_turn: "Same‑day diagnostics",
+        kpi_warranty: "3‑month repair warranty",
+        kpi_area: "Sofia & nearby",
+        cta_book: "Book a repair",
+        cta_build: "Configure a gaming PC",
+        services_title: "Services",
+        svc_hw_title: "Diagnostics & Repair",
+        svc_hw_desc: "Motherboards, GPUs, screens, keyboards, cooling, power issues. Clean, replace, or repair.",
+        svc_sw_title: "OS & Malware",
+        svc_sw_desc: "Windows/macOS installs, drivers, performance tuning, malware cleanup, backups.",
+        svc_up_title: "SSD, RAM, GPU",
+        svc_up_desc: "Speed up old machines with SSD/RAM upgrades or refresh your GPU/PSU/cooling.",
+        svc_dr_title: "Data Recovery",
+        svc_dr_desc: "Accidental deletion, dead drives, or corrupted OS—best‑effort recovery with integrity checks.",
+        svc_pc_title: "Custom Gaming PCs",
+        svc_pc_desc: "Balanced parts, thermals, and noise. We build, stress test, and deliver ready to play.",
+        svc_biz_title: "On‑site & Contracts",
+        svc_biz_desc: "Office support, fleet refresh, imaging, asset tracking, and SLAs for small teams.",
+        build_title: "Configure your Gaming PC",
+        build_note: "Prices are indicative in BGN (w/ VAT). Final quote depends on market availability.",
+        tiers_title: "Suggested tiers",
+        contact_title: "Contact",
+        privacy: "By sending, you agree to be contacted about your request. We don't share your data.",
+        contact_note: "Drop‑offs by appointment. On‑site visits available.",
+        hours: "Mon–Sat 10:00–19:00",
+        btn_quote: "Send as quote",
+        btn_send: "Send",
+        ram: "RAM",
+        storage: "Storage",
+        case: "Case",
+        psu: "PSU",
+        img_credit: "Illustrative photo"
+      },
+      bg: {
+        subtitle: "Сервиз за компютри и лаптопи",
+        nav_services: "Услуги",
+        nav_build: "Сглоби PC",
+        nav_contact: "Контакт",
+        badge_fast: "Бърз и надежден сервиз",
+        h1_title: "Ремонт на PC и лаптопи • Гейминг конфигурации",
+        lead_copy: "Диагностика хардуер/софтуер, ъпгрейди, възстановяване на данни и гейминг сборки по поръчка.",
+        kpi_turn: "Диагностика в същия ден",
+        kpi_warranty: "3 месеца гаранция",
+        kpi_area: "София и района",
+        cta_book: "Запиши ремонт",
+        cta_build: "Конфигурирай геймърски PC",
+        services_title: "Услуги",
+        svc_hw_title: "Диагностика и ремонт",
+        svc_hw_desc: "Дънни платки, видеокарти, екрани, клавиатури, охлаждане, захранване.",
+        svc_sw_title: "ОС и вируси",
+        svc_sw_desc: "Инсталации Windows/macOS, драйвери, оптимизация, почистване от зловреден софтуер, бекъпи.",
+        svc_up_title: "SSD, RAM, GPU",
+        svc_up_desc: "Ускоряване със SSD/RAM или освежаване на GPU/PSU/охлаждане.",
+        svc_dr_title: "Възстановяване на данни",
+        svc_dr_desc: "Изтрити файлове, повредени носители или OS — възстановяване с проверки за цялост.",
+        svc_pc_title: "Геймърски конфигурации",
+        svc_pc_desc: "Балансирани части, термики и шум. Сглобяване, стрес тестове и доставка готов за игра.",
+        svc_biz_title: "За бизнес",
+        svc_biz_desc: "Поддръжка на офис, подмяна на парк, имиджинг, инвентаризация и SLA.",
+        build_title: "Конфигурирай своя геймърски PC",
+        build_note: "Цените са ориентировъчни в лв. Крайната оферта зависи от наличност.",
+        tiers_title: "Примерни нива",
+        contact_title: "Контакт",
+        privacy: "С изпращането се съгласявате да се свържем с вас. Не споделяме данни.",
+        contact_note: "Прием само с уговорка. Възможни посещения на адрес.",
+        hours: "Пон–Съб 10:00–19:00",
+        btn_quote: "Изпрати като оферта",
+        btn_send: "Изпрати",
+        ram: "RAM",
+        storage: "Съхранение",
+        case: "Кутия",
+        psu: "Захранване",
+        img_credit: "Илюстративна снимка"
+      }
+    };
+
+    // --- Parts & pricing (indicative) ---
+    const PARTS = {
+      cpu: {
+        "Intel i5-12400F": 260,
+        "Intel i5-14400F": 360,
+        "AMD Ryzen 5 5600": 210,
+        "AMD Ryzen 5 7600": 380
+      },
+      gpu: {
+        "NVIDIA RTX 4060": 700,
+        "NVIDIA RTX 4070 Super": 1250,
+        "AMD RX 7600": 550,
+        "AMD RX 7800 XT": 1150
+      },
+      ram: {
+        "16GB DDR4-3200": 95,
+        "32GB DDR4-3600": 170,
+        "32GB DDR5-6000": 210
+      },
+      storage: {
+        "1TB NVMe Gen3": 110,
+        "1TB NVMe Gen4": 150,
+        "2TB NVMe Gen4": 240
+      },
+      pcase: {
+        "Compact airflow": 140,
+        "ATX tempered glass": 180
+      },
+      psu: {
+        "650W 80+ Gold": 160,
+        "750W 80+ Gold": 190
+      }
+    };
+
+    const Tiers = [
+      { name: "Entry", cpu: "AMD Ryzen 5 5600", gpu: "AMD RX 7600", ram: "16GB DDR4-3200", storage: "1TB NVMe Gen3", pcase: "Compact airflow", psu: "650W 80+ Gold" },
+      { name: "Balanced", cpu: "Intel i5-14400F", gpu: "NVIDIA RTX 4060", ram: "32GB DDR4-3600", storage: "1TB NVMe Gen4", pcase: "ATX tempered glass", psu: "750W 80+ Gold" },
+      { name: "High", cpu: "AMD Ryzen 5 7600", gpu: "NVIDIA RTX 4070 Super", ram: "32GB DDR5-6000", storage: "2TB NVMe Gen4", pcase: "ATX tempered glass", psu: "750W 80+ Gold" }
+    ];
+
+    const $ = (sel)=>document.querySelector(sel);
+    const $$ = (sel)=>document.querySelectorAll(sel);
+
+    function fmt(n){return n.toLocaleString('bg-BG',{maximumFractionDigits:0})}
+
+    function fillSelect(id, options){
+      const el = $("#"+id);
+      el.innerHTML = Object.entries(options).map(([k,v])=>`<option value="${k}">${k} — ${fmt(v)} BGN</option>`).join("")
+    }
+
+    function calcTotal(){
+      const picks = {
+        cpu: $("#cpu").value,
+        gpu: $("#gpu").value,
+        ram: $("#ram").value,
+        storage: $("#storage").value,
+        pcase: $("#pcase").value,
+        psu: $("#psu").value
+      };
+      const total = Object.entries(picks).reduce((sum,[k,v])=> sum + (PARTS[k][v]||0), 0);
+      $("#total").textContent = fmt(total);
+      $("#build-summary").textContent = Object.values(picks).join(" · ");
+      return {picks,total};
+    }
+
+    function renderTiers(){
+      const wrap = $("#tiers");
+      wrap.innerHTML = Tiers.map(t=>{
+        const price = Object.entries(t).filter(([k])=>PARTS[k]).reduce((sum,[k,v])=>sum + PARTS[k][v],0);
+        return `<div class="card" style="margin:8px 0;padding:12px">
+          <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap">
+            <div><span class="pill">${t.name}</span>
+            <div class="small">${t.cpu} · ${t.gpu} · ${t.ram} · ${t.storage}</div></div>
+            <div class="price">${fmt(price)} BGN</div>
+          </div>
+          <div style="margin-top:8px"><button class="btn secondary" data-tier="${t.name}">Use</button></div>
+        </div>`
+      }).join("");
+      wrap.querySelectorAll('button[data-tier]').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          const t = Tiers.find(x=>x.name===btn.dataset.tier);
+          for(const k of Object.keys(PARTS)){
+            if(t[k]) $("#"+k).value = t[k];
+          }
+          calcTotal();
+          window.location.hash = '#build';
+        })
+      })
+    }
+
+    function setLanguage(lang){
+      const dict = I18N[lang]||I18N.en;
+      $$("[data-i18n]").forEach(el=>{
+        const key = el.getAttribute('data-i18n');
+        if(dict[key]) el.textContent = dict[key];
+      })
+      document.documentElement.lang = lang === 'bg' ? 'bg' : 'en';
+      $('#btn-en').classList.toggle('active', lang==='en');
+      $('#btn-bg').classList.toggle('active', lang==='bg');
+      $('#subtitle').textContent = dict.subtitle;
+      localStorage.setItem('lang', lang);
+    }
+
+    // Prefill contact with quote
+    $("#btn-quote").addEventListener('click', ()=>{
+      const {picks,total} = calcTotal();
+      const lines = [
+        'PC Build Request:',
+        `CPU: ${picks.cpu}`,
+        `GPU: ${picks.gpu}`,
+        `RAM: ${picks.ram}`,
+        `Storage: ${picks.storage}`,
+        `Case: ${picks.pcase}`,
+        `PSU: ${picks.psu}`,
+        `Estimated parts total: ${fmt(total)} BGN`
+      ];
+      $('#message').value = lines.join('\n');
+      window.location.hash = '#contact';
+    });
+
+    // Populate selects
+    ['cpu','gpu','ram','storage','pcase','psu'].forEach(k=>fillSelect(k, PARTS[k]));
+    calcTotal();
+    renderTiers();
+
+    // Language init
+    const saved = localStorage.getItem('lang');
+    setLanguage(saved || (navigator.language.startsWith('bg') ? 'bg' : 'en'));
+    $('#btn-en').addEventListener('click', ()=>setLanguage('en'));
+    $('#btn-bg').addEventListener('click', ()=>setLanguage('bg'));
+
+    // Year
+    $('#year').textContent = new Date().getFullYear();
+
+    // Basic form feedback (client-side only)
+    $('#contact-form').addEventListener('submit', (e)=>{
+      // Let Formspree handle the POST; minimal UX hint
+      setTimeout(()=>{
+        alert('Thanks! If this was a test, remember to replace the Formspree endpoint.');
+      }, 100);
+    })
+      // ---- CMS content loader (optional; works with Decap CMS files under /content) ----\n    async function tryLoad(path){\n      try{ const r = await fetch(path, {cache:'no-store'}); if(!r.ok) throw 0; return await r.json(); }catch{ return null }\n    }\n    (async ()=>{\n      // If content/site.json exists, override i18n text\n      const site = await tryLoad('content/site.json');\n      if(site){\n        const lang = document.documentElement.lang === 'bg' ? 'bg' : 'en';\n        const t = (v)=> (v && (v[lang] ?? v.en ?? v)) || null;\n        if(t(site.subtitle)) $('#subtitle').textContent = t(site.subtitle);\n        if(t(site.hours))     $('[data-i18n=\"hours\"]').textContent = t(site.hours);\n        if(t(site.city))      $('[data-i18n=\"kpi_area\"]').textContent = t(site.city);\n        if(t(site.title))     $('[data-i18n=\"h1_title\"]').textContent = t(site.title);\n      }\n      // Services from content/services/index.json (array of items)\n      const svcIndex = await tryLoad('content/services/index.json');\n      if(Array.isArray(svcIndex) && svcIndex.length){\n        const lang = document.documentElement.lang === 'bg' ? 'bg' : 'en';\n        const grid = document.querySelector('#services .grid');\n        grid.innerHTML = svcIndex.map(s=>{\n          const title = s.title?.[lang] || s.title;\n          const desc  = s.description?.[lang] || s.description;\n          const cat   = s.category || 'Service';\n          return `<div class=\\"card service\\">\n            <div class=\\"pill\\">${cat}</div>\n            <h3>${title}</h3>\n            <p class=\\"small\\">${desc}</p>\n          </div>`;\n        }).join('');\n      }\n      // Tiers from content/tiers/index.json\n      const tiers = await tryLoad('content/tiers/index.json');\n      if(Array.isArray(tiers) && tiers.length){\n        window.Tiers = tiers;\n        renderTiers();\n      }\n    })();\n  </script>\n</body>\n</html>

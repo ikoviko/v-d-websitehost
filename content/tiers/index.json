@@ -1,0 +1,4 @@
+[
+  { "name": { "en": "Entry", "bg": "Базов" }, "cpu": "Ryzen 5 5600", "gpu": "RX 7600", "ram": "16GB DDR4-3200", "storage": "1TB NVMe", "pcase": "Compact airflow", "psu": "650W Gold" },
+  { "name": { "en": "Balanced", "bg": "Баланс" }, "cpu": "i5-14400F", "gpu": "RTX 4060", "ram": "32GB DDR4-3600", "storage": "1TB NVMe Gen4", "pcase": "ATX TG", "psu": "750W Gold" }
+]

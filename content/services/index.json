@@ -1,0 +1,12 @@
+[
+  {
+    "category": "Hardware",
+    "title": { "en": "Diagnostics & Repair", "bg": "Диагностика и ремонт" },
+    "description": { "en": "Motherboards, GPUs, screens, keyboards, cooling, power.", "bg": "Дънни платки, видеокарти, екрани, клавиатури, охлаждане, захранване." }
+  },
+  {
+    "category": "Software",
+    "title": { "en": "OS & Malware", "bg": "ОС и вируси" },
+    "description": { "en": "Installs, drivers, tuning, malware cleanup, backups.", "bg": "Инсталации, драйвери, оптимизация, почистване, бекъпи." }
+  }
+]
