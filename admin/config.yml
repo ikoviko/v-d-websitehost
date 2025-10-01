@@ -1,0 +1,66 @@
+backend:
+  name: github
+  repo: ikoviko/v-d-websitehost
+  branch: main
+
+media_folder: "static/images"
+public_folder: "/static/images"
+
+i18n:
+  structure: single_file
+  locales: [en, bg]
+  default_locale: en
+
+collections:
+  - name: site
+    label: Site Settings
+    i18n: true
+    files:
+      - file: "content/site.json"
+        label: Texts
+        i18n: true
+        fields:
+          - {label: Title, name: title, widget: string, i18n: true}
+          - {label: Subtitle, name: subtitle, widget: string, i18n: true}
+          - {label: Hours, name: hours, widget: string, i18n: true}
+          - {label: City/Area, name: city, widget: string, i18n: true}
+
+  - name: services
+    label: Services
+    i18n: true
+    files:
+      - file: "content/services/index.json"
+        label: Services List
+        i18n: true
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            i18n: true
+            fields:
+              - {label: Category, name: category, widget: string, i18n: duplicate}
+              - {label: Title, name: title, widget: string, i18n: true}
+              - {label: Description, name: description, widget: text, i18n: true}
+              - {label: Icon (emoji ok), name: icon, widget: string, required: false}
+
+  - name: tiers
+    label: PC Tiers
+    i18n: true
+    files:
+      - file: "content/tiers/index.json"
+        label: Tiers
+        i18n: true
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            i18n: true
+            fields:
+              - {label: Name, name: name, widget: string, i18n: true}
+              - {label: CPU, name: cpu, widget: string}
+              - {label: GPU, name: gpu, widget: string}
+              - {label: RAM, name: ram, widget: string}
+              - {label: Storage, name: storage, widget: string}
+              - {label: Case, name: pcase, widget: string}
+              - {label: PSU, name: psu, widget: string}
+              - {label: Image, name: image, widget: image, required: false}
