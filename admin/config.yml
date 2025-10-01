@@ -16,20 +16,22 @@ collections:
     label: Site Settings
     i18n: true
     files:
-      - file: "content/site.json"
+      - name: site_texts          # <-- REQUIRED
+        file: "content/site.json"
         label: Texts
         i18n: true
         fields:
-          - {label: Title, name: title, widget: string, i18n: true}
-          - {label: Subtitle, name: subtitle, widget: string, i18n: true}
-          - {label: Hours, name: hours, widget: string, i18n: true}
-          - {label: City/Area, name: city, widget: string, i18n: true}
+          - { label: Title,    name: title,    widget: string, i18n: true }
+          - { label: Subtitle, name: subtitle, widget: string, i18n: true }
+          - { label: Hours,    name: hours,    widget: string, i18n: true }
+          - { label: City,     name: city,     widget: string, i18n: true }
 
   - name: services
     label: Services
     i18n: true
     files:
-      - file: "content/services/index.json"
+      - name: services_list      # <-- REQUIRED
+        file: "content/services/index.json"
         label: Services List
         i18n: true
         fields:
@@ -38,16 +40,17 @@ collections:
             widget: list
             i18n: true
             fields:
-              - {label: Category, name: category, widget: string, i18n: duplicate}
-              - {label: Title, name: title, widget: string, i18n: true}
-              - {label: Description, name: description, widget: text, i18n: true}
-              - {label: Icon (emoji ok), name: icon, widget: string, required: false}
+              - { label: Category,    name: category,    widget: string, i18n: duplicate }
+              - { label: Title,       name: title,       widget: string, i18n: true }
+              - { label: Description, name: description, widget: text,   i18n: true }
+              - { label: Icon,        name: icon,        widget: string, required: false }
 
   - name: tiers
     label: PC Tiers
     i18n: true
     files:
-      - file: "content/tiers/index.json"
+      - name: tiers_list         # <-- REQUIRED
+        file: "content/tiers/index.json"
         label: Tiers
         i18n: true
         fields:
@@ -56,11 +59,11 @@ collections:
             widget: list
             i18n: true
             fields:
-              - {label: Name, name: name, widget: string, i18n: true}
-              - {label: CPU, name: cpu, widget: string}
-              - {label: GPU, name: gpu, widget: string}
-              - {label: RAM, name: ram, widget: string}
-              - {label: Storage, name: storage, widget: string}
-              - {label: Case, name: pcase, widget: string}
-              - {label: PSU, name: psu, widget: string}
-              - {label: Image, name: image, widget: image, required: false}
+              - { label: Name,    name: name,    widget: string, i18n: true }
+              - { label: CPU,     name: cpu,     widget: string }
+              - { label: GPU,     name: gpu,     widget: string }
+              - { label: RAM,     name: ram,     widget: string }
+              - { label: Storage, name: storage, widget: string }
+              - { label: Case,    name: pcase,   widget: string }
+              - { label: PSU,     name: psu,     widget: string }
+              - { label: Image,   name: image,   widget: image, required: false }
